@@ -1,0 +1,223 @@
+/** Font Sizes  we try to enforce the habit of having a handful of font sizes by storing in generic variables like size-1, size-2, etc. There should never too many font-sizes in a site as it is an indication that it's beginning to break the style guides. */
+/** Page Dimensions */
+/** We abbreviate and prefix structure names to help developers inmediately identify the type of element while at the same time keeping class names short:  m   =  mode g   =  grid p   =  panel r   =  region c   =  column w   =  widget b   =  block x   =  component t   =  theme  */
+/** Standarize font size with rem */
+/* line 21, ../sass/matrix/base.scss */
+html { font-size: 62.5%; }
+
+/* line 23, ../sass/matrix/base.scss */
+body { font-size: 1.6rem; line-height: 2.6rem; }
+
+/** No margin top! Always push down. */
+/* line 32, ../sass/matrix/base.scss */
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+
+/* line 36, ../sass/matrix/base.scss */
+h1, h2, h3, h4, h5, h6 { color: #444; }
+
+/* line 41, ../sass/matrix/base.scss */
+h1 { font-size: 3.8rem; line-height: 4.8rem; }
+
+/* line 42, ../sass/matrix/base.scss */
+h2 { font-size: 3.15rem; line-height: 4rem; }
+
+/* line 43, ../sass/matrix/base.scss */
+h3 { font-size: 2.45rem; line-height: 3.45rem; }
+
+/* line 44, ../sass/matrix/base.scss */
+h4 { font-size: 1.75rem; line-height: 2.75rem; margin-bottom: 0.7rem; }
+
+/* line 45, ../sass/matrix/base.scss */
+h5 { font-size: 1.6rem; line-height: 2.6rem; }
+
+/* line 46, ../sass/matrix/base.scss */
+h6 { font-size: 1.19rem; line-height: 2.19rem; }
+
+/* Make sure that the width of any element is truly that which was set, even if it has padding, etc */
+/* line 52, ../sass/matrix/base.scss */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; word-wrap: break-word; -webkit-font-smoothing: antialiased; }
+
+/** Fonts */
+@font-face { font-family: "BLOKKNeue-Regular"; src: url(/matrix/fonts/BLOKK/neue-regular/webfonts/BLOKKNeue-Regular.eot); src: url(/matrix/fonts/BLOKK/neue-regular/webfonts/BLOKKNeue-Regular.eot?iefix) format('eot'), url(/matrix/fonts/BLOKK/neue-regular/webfonts/BLOKKNeue-Regular.woff) format('woff'), url(/matrix/fonts/BLOKK/neue-regular/webfonts/BLOKKNeue-Regular.ttf) format('truetype'), url(/matrix/fonts/BLOKK/neue-regular/webfonts/BLOKKNeue-Regular.svg) format('svg'); }
+
+@font-face { font-family: "Verb-Ultra"; src: url(/matrix/fonts/Verb/verb_ultra/VerbUltra-webfont.eot); src: url(/matrix/fonts/Verb/verb_ultra/VerbUltra-webfont.eot?iefix) format('eot'), url(/matrix/fonts/Verb/verb_ultra/VerbUltra-webfont.woff) format('woff'), url(/matrix/fonts/Verb/verb_ultra/VerbUltra-webfont.ttf) format('truetype'), url(/matrix/fonts/Verb/verb_ultra/VerbUltra-webfont.svg) format('svg'); }
+
+@font-face { font-family: "Verb-Light"; src: url(/matrix/fonts/Verb/verb_light/VerbLight-webfont.eot); src: url(/matrix/fonts/Verb/verb_light/VerbLight-webfont.eot?iefix) format('eot'), url(/matrix/fonts/Verb/verb_light/VerbLight-webfont.woff) format('woff'), url(/matrix/fonts/Verb/verb_light/VerbLight-webfont.ttf) format('truetype'), url(/matrix/fonts/Verb/verb_light/VerbLight-webfont.svg) format('svg'); }
+
+@font-face { font-family: "Verb-Regular"; src: url(/matrix/fonts/Verb/verb_regular/VerbRegular-webfont.eot); src: url(/matrix/fonts/Verb/verb_regular/VerbRegular-webfont.eot?iefix) format('eot'), url(/matrix/fonts/Verb/verb_regular/VerbRegular-webfont.woff) format('woff'), url(/matrix/fonts/Verb/verb_regular/VerbRegular-webfont.ttf) format('truetype'), url(/matrix/fonts/Verb/verb_regular/VerbRegular-webfont.svg) format('svg'); }
+
+@font-face { font-family: "Verb-Medium"; src: url(/matrix/fonts/Verb/verb_medium/VerbMedium-webfont.eot); src: url(/matrix/fonts/Verb/verb_medium/VerbMedium-webfont.eot?iefix) format('eot'), url(/matrix/fonts/Verb/verb_medium/VerbMedium-webfont.woff) format('woff'), url(/matrix/fonts/Verb/verb_medium/VerbMedium-webfont.ttf) format('truetype'), url(/matrix/fonts/Verb/verb_medium/VerbMedium-webfont.svg) format('svg'); }
+
+/* line 1, ../sass/matrix/grids.scss */
+.grid { margin-right: -20px; }
+
+/* line 9, ../sass/matrix/grids.scss */
+.grid:after { content: ""; display: table; clear: both; }
+
+/* Adds padding to the .grid class */
+/* line 16, ../sass/matrix/grids.scss */
+.g-outer { padding: 20px; }
+
+/* line 20, ../sass/matrix/grids.scss */
+.g-margin-reset { margin-right: 0; }
+
+/* line 25, ../sass/matrix/grids.scss */
+[class*='c-'] { float: left; padding-right: 20px; padding-bottom: 20px; }
+
+/*[class*='c-']:last-child { padding-right  :  0;
+}*/
+/* line 36, ../sass/matrix/grids.scss */
+.column-1-1, .col-1-1, .c-1-1 { width: 100%; }
+
+/* line 37, ../sass/matrix/grids.scss */
+.column-1-2, .col-1-2, .c-1-2 { width: 50%; }
+
+/* line 38, ../sass/matrix/grids.scss */
+.column-1-3, .col-1-3, .c-1-3 { width: 33.33%; }
+
+/* line 39, ../sass/matrix/grids.scss */
+.column-1-4, .col-1-4, .c-1-4 { width: 25%; }
+
+/* line 40, ../sass/matrix/grids.scss */
+.column-1-8, .col-1-8, .c-1-8 { width: 12.5%; }
+
+/* line 41, ../sass/matrix/grids.scss */
+.column-2-3, .col-2-3, .c-2-3 { width: 66.66%; }
+
+/* line 2, ../sass/matrix/modes.scss */
+.m-wireframe .panel, .m-wireframe .pl { border: #ddd 1px solid; width: 1000px; margin: 20px auto; }
+
+/* line 10, ../sass/matrix/modes.scss */
+.m-wireframe .region, .m-wireframe .reg, .m-wireframe [class*='r-'] { border: #CCFFFF 1px solid; }
+
+/* line 16, ../sass/matrix/modes.scss */
+.m-wireframe .panes, .m-wireframe .pan, .m-wireframe [class*='p-'] { border: #FFCC99 1px solid; }
+
+/* line 22, ../sass/matrix/modes.scss */
+.m-wireframe .widgets, .m-wireframe .wgt, .m-wireframe [class*='w-'] { border: #FFFF99 1px solid; }
+
+/* line 27, ../sass/matrix/modes.scss */
+.m-wireframe [class*='x-'] { background: transparent; border: #CCFF99; }
+
+/** Display the grid, layout, blocks and text in a black and white format */
+/* line 36, ../sass/matrix/modes.scss */
+.m-layout { background: #efefef; }
+
+/** A panel is the div that wraps all the page content into a canvas. (aka .wrapper,  .canvas) Using the word "panel" for consistency with "panes" naming */
+/* line 49, ../sass/matrix/modes.scss */
+.m-layout .panel, .m-layout .pnl, .m-layout [class*='pl-'] { min-height: 400px; background: #fff; width: 1000px; margin: 20px auto; }
+
+/** Styles for Widgets: a widget is group of components that, combined, can offer an UX on its own. */
+/* line 63, ../sass/matrix/modes.scss */
+.m-layout .block, .m-layout .blk, .m-layout [class*='b-'] { min-height: 60px; background: #efefef; }
+
+/** Layout This CSS file is used to defined some superficial styles that will help frontend developers,  designers and ux architects visualize what has been constructed with the grid, regions, columns,  panes, widget and components. Most of the styles here will be reset at the theme level before shipping out to production. Nontheless, this will be a nice visualization of the site structure. */
+/* line 9, ../sass/matrix/layouts.scss */
+.layout, [class*='layout-'] { border: #eee 1px solid; padding: 20px 0 20px 20px; }
+
+/* line 15, ../sass/matrix/layouts.scss */
+.layout:after, [class*='layout-']:after { content: ""; display: table; clear: both; }
+
+/** A panel is the div that wraps all the page content into a canvas. (aka .wrapper,  .canvas) Using the word "panel" for consistency with "panes" naming */
+/* line 28, ../sass/matrix/layouts.scss */
+.panel, .pnl, [class*='pl-'] { width: 1000px; }
+
+/* line 35, ../sass/matrix/layouts.scss */
+.column, .col, [class*='c-'] { background: #fff; }
+
+/* line 41, ../sass/matrix/layouts.scss */
+.region:last-of-type > .column, .reg:last-of-type > .col, [class*='r-']:last-of-type > [class*='c-'] { padding-bottom: 0; }
+
+/** Styles for regions: regions are the subdivisions of a layout. E.g. header, footer, sidebar, main */
+/* line 51, ../sass/matrix/layouts.scss */
+.region, .reg, [class*='r-'] { background: #fff; }
+
+/** Styles for Pane elements. Panes separate widgets horizontally. */
+/* line 62, ../sass/matrix/layouts.scss */
+.pane, .pan, [class*='p-'] { min-height: 40px; background: #fff; margin-bottom: 20px; }
+
+/* line 68, ../sass/matrix/layouts.scss */
+.pane:last-of-type, .pan:last-of-type, [class*='p-']:last-of-type { margin-bottom: 0; }
+
+/** Styles for Widgets: a widget is group of components that, combined, can offer an UX on its own. */
+/* line 79, ../sass/matrix/layouts.scss */
+.block, .blk, [class*='b-'], .widget, .wgt, [class*='w-'] { /*min-height  :  60px;
+background  :  #efefef;*/ }
+
+/** Styles for Components: a component is the smallest piece of UI. On its own offers no UX. */
+/* line 90, ../sass/matrix/layouts.scss */
+.component, .cmp, [class*='x-'] { background: #CCFFFF; min-height: 10px; }
+
+/* line 1, ../sass/matrix/panes.scss */
+.p-font-showcase { font-size: 3.15rem; line-height: 4rem; }
+
+/** Components are the most basic items seen by the user. They do not offer a full UX experience on their own; but usually, a group of components make up a widget that can offer a full experience. Good examples of components, are: play, pause, resume buttons and a video screen. By themselves, they do not offer a full user experience, but together, they create a video player that the user can fully interact with.   */
+/* line 10, ../sass/matrix/components.scss */
+.font-1 { font-family: Arial, Helvetica, sans-serif; }
+
+/* line 11, ../sass/matrix/components.scss */
+.font-2 { font-family: Georgia, serif; }
+
+/* line 13, ../sass/matrix/components.scss */
+.headline-underline { border-bottom: #eee 1px solid; margin-bottom: 20px; }
+
+/* line 18, ../sass/matrix/components.scss */
+.headline-underline h2 { margin-bottom: 5px; }
+
+/** Ads/Creatives  Ads are consider components as they usually do not offer a full experience. We do not  set the height as it might vary; instead we set min-height;  */
+/* line 31, ../sass/matrix/components.scss */
+[class*='x-ad-'] { background: #efefef; text-align: center; }
+
+/* line 36, ../sass/matrix/components.scss */
+.x-ad-970x66 { width: 970px; min-height: 66px; line-height: 66px; margin: 0 -5px; }
+
+/* line 44, ../sass/matrix/components.scss */
+.x-ad-300x250 { width: 300px; min-height: 250px; line-height: 250px; margin: 0 auto; }
+
+/* line 52, ../sass/matrix/components.scss */
+.x-ad-720x90 { width: 720px; min-height: 90px; line-height: 90px; margin: 0 auto; }
+
+/* line 1, ../sass/matrix/theme.scss */
+.t-sam3k { background: url(http://www.ivillage.com/forums/sites/all/themes/ibase/ibase/img/bg_global/bg-diagonal-tile.png) repeat; font: 1.8rem/2.8rem "Verb-Medium"; color: #444; /** Swatches */ }
+/* line 6, ../sass/matrix/theme.scss */
+.t-sam3k h1, .t-sam3k h2, .t-sam3k h3, .t-sam3k h4, .t-sam3k h5, .t-sam3k h6 { color: #556270; font-family: "Verb-Medium"; }
+/* line 11, ../sass/matrix/theme.scss */
+.t-sam3k .panel { -moz-box-shadow: #cccccc 1px 1px 20px; -webkit-box-shadow: #cccccc 1px 1px 20px; -o-box-shadow: #cccccc 1px 1px 20px; box-shadow: #cccccc 1px 1px 20px; background: #fff; margin: 20px auto; opacity: 0; }
+/* line 19, ../sass/matrix/theme.scss */
+.t-sam3k .block { min-height: 60px; background: #efefef; }
+/* line 32, ../sass/matrix/theme.scss */
+.t-sam3k .bg-swatch-1 { background: #556270; color: #fff; }
+/* line 33, ../sass/matrix/theme.scss */
+.t-sam3k .bg-swatch-2 { background: #4ecdc4; color: #fff; }
+/* line 34, ../sass/matrix/theme.scss */
+.t-sam3k .bg-swatch-3 { background: #c7f464; color: #fff; }
+/* line 35, ../sass/matrix/theme.scss */
+.t-sam3k .bg-swatch-4 { background: #ff6b6b; color: #fff; }
+/* line 36, ../sass/matrix/theme.scss */
+.t-sam3k .bg-swatch-5 { background: #c44d58; color: #fff; }
+
+@media screen and (max-width: 420px) { /* line 3, ../sass/matrix/responsive.scss */
+  .panel { width: 95%; }
+  /* line 7, ../sass/matrix/responsive.scss */
+  .grid { margin-right: 0; }
+  /* line 11, ../sass/matrix/responsive.scss */
+  main.c-2-3 { width: 100%; padding-right: 0; }
+  /* line 16, ../sass/matrix/responsive.scss */
+  header { display: none; }
+  /* line 20, ../sass/matrix/responsive.scss */
+  aside { display: none; }
+  /* line 24, ../sass/matrix/responsive.scss */
+  footer { display: none; }
+  /* line 28, ../sass/matrix/responsive.scss */
+  .rwd-full { width: 100%; clear: both; padding-right: 0; }
+  /* line 34, ../sass/matrix/responsive.scss */
+  [class*='c-']:last-child { padding-right: 0; } }
+/** Tablets */
+@media screen and (max-width: 1200px) { /* line 45, ../sass/matrix/responsive.scss */
+  .panel { width: 96%; }
+  /* line 49, ../sass/matrix/responsive.scss */
+  main.c-2-3 { width: 100%; }
+  /* line 53, ../sass/matrix/responsive.scss */
+  header { display: none; }
+  /* line 57, ../sass/matrix/responsive.scss */
+  aside { display: none; } }

@@ -1,0 +1,25 @@
+@media screen and (max-width: 420px) { /* line 3, ../../sass/matrix/responsive.scss */
+  .panel { width: 95%; }
+  /* line 7, ../../sass/matrix/responsive.scss */
+  .grid { margin-right: 0; }
+  /* line 11, ../../sass/matrix/responsive.scss */
+  main.c-2-3 { width: 100%; padding-right: 0; }
+  /* line 16, ../../sass/matrix/responsive.scss */
+  header { display: none; }
+  /* line 20, ../../sass/matrix/responsive.scss */
+  aside { display: none; }
+  /* line 24, ../../sass/matrix/responsive.scss */
+  footer { display: none; }
+  /* line 28, ../../sass/matrix/responsive.scss */
+  .rwd-full { width: 100%; clear: both; padding-right: 0; }
+  /* line 34, ../../sass/matrix/responsive.scss */
+  [class*='c-']:last-child { padding-right: 0; } }
+/** Tablets */
+@media screen and (max-width: 1200px) { /* line 45, ../../sass/matrix/responsive.scss */
+  .panel { width: 96%; }
+  /* line 49, ../../sass/matrix/responsive.scss */
+  main.c-2-3 { width: 100%; }
+  /* line 53, ../../sass/matrix/responsive.scss */
+  header { display: none; }
+  /* line 57, ../../sass/matrix/responsive.scss */
+  aside { display: none; } }

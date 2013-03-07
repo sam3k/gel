@@ -11,6 +11,8 @@ lib-cov
 config/auth.json
 config/config.js
 
+fonts/*
+
 pids
 logs
 results

@@ -1,0 +1,36 @@
+/** Layout This CSS file is used to defined some superficial styles that will help frontend developers,  designers and ux architects visualize what has been constructed with the grid, regions, columns,  panes, widget and components. Most of the styles here will be reset at the theme level before shipping out to production. Nontheless, this will be a nice visualization of the site structure. */
+/* line 9, ../../sass/matrix/layouts.scss */
+.layout, [class*='layout-'] { border: #eee 1px solid; padding: 20px 0 20px 20px; }
+
+/* line 15, ../../sass/matrix/layouts.scss */
+.layout:after, [class*='layout-']:after { content: ""; display: table; clear: both; }
+
+/** A panel is the div that wraps all the page content into a canvas. (aka .wrapper,  .canvas) Using the word "panel" for consistency with "panes" naming */
+/* line 28, ../../sass/matrix/layouts.scss */
+.panel, .pnl, [class*='pl-'] { width: 1000px; }
+
+/* line 35, ../../sass/matrix/layouts.scss */
+.column, .col, [class*='c-'] { background: #fff; }
+
+/* line 41, ../../sass/matrix/layouts.scss */
+.region:last-of-type > .column, .reg:last-of-type > .col, [class*='r-']:last-of-type > [class*='c-'] { padding-bottom: 0; }
+
+/** Styles for regions: regions are the subdivisions of a layout. E.g. header, footer, sidebar, main */
+/* line 51, ../../sass/matrix/layouts.scss */
+.region, .reg, [class*='r-'] { background: #fff; }
+
+/** Styles for Pane elements. Panes separate widgets horizontally. */
+/* line 62, ../../sass/matrix/layouts.scss */
+.pane, .pan, [class*='p-'] { min-height: 40px; background: #fff; margin-bottom: 20px; }
+
+/* line 68, ../../sass/matrix/layouts.scss */
+.pane:last-of-type, .pan:last-of-type, [class*='p-']:last-of-type { margin-bottom: 0; }
+
+/** Styles for Widgets: a widget is group of components that, combined, can offer an UX on its own. */
+/* line 79, ../../sass/matrix/layouts.scss */
+.block, .blk, [class*='b-'], .widget, .wgt, [class*='w-'] { /*min-height  :  60px;
+background  :  #efefef;*/ }
+
+/** Styles for Components: a component is the smallest piece of UI. On its own offers no UX. */
+/* line 90, ../../sass/matrix/layouts.scss */
+.component, .cmp, [class*='x-'] { background: #CCFFFF; min-height: 10px; }

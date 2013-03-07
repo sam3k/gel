@@ -1,0 +1,57 @@
+/**
+ * Components are the most basic items seen by the user. They do not offer a full UX experience
+ * on their own; but usually, a group of components make up a widget that can offer a full experience.
+ * Good examples of components, are: play, pause, resume buttons and a video screen. By themselves,
+ * they do not offer a full user experience, but together, they create a video player that the user
+ * can fully interact with.  
+ */
+
+
+.font-1 { font-family : $font-1; }
+.font-2 { font-family : $font-2; } 
+ 
+.headline-underline {
+  border-bottom : #eee 1px solid;
+  margin-bottom : $gutter;
+}
+
+  .headline-underline h2 {
+    margin-bottom : 5px;
+  }
+  
+  
+  
+/**
+ * Ads/Creatives
+ *
+ * Ads are consider components as they usually do not offer a full experience. We do not 
+ * set the height as it might vary; instead we set min-height;
+ *
+ */
+[class*='x-ad-'] {
+  background   :  #efefef;
+  text-align   :  center;
+}
+
+.x-ad-970x66 {
+  width        :  970px;
+  min-height   :  66px;  // Use min-height instead of height in case is expandable or taller
+  line-height  :  66px;
+  margin       :  0 -5px;
+}
+
+
+.x-ad-300x250 {
+  width        :  300px;
+  min-height   :  250px;  // Use min-height instead of height in case is expandable or taller
+  line-height  :  250px;
+  margin       :  0 auto;
+}
+
+
+.x-ad-720x90 {
+  width        :  720px;
+  min-height   :  90px;  // Use min-height instead of height in case is expandable or taller
+  line-height  :  90px;
+  margin       :  0 auto;
+}

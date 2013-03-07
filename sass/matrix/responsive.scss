@@ -1,0 +1,61 @@
+@media screen and (max-width: 420px) {
+
+  .panel {
+    width : 95%;
+  }
+  
+    .grid {
+      margin-right : 0;
+    }
+  
+      main.c-2-3 {
+        width          :  100%;
+        padding-right  :  0;
+      }
+      
+        header {
+          display : none;
+        }
+      
+      aside {
+        display : none;
+      }
+      
+      footer {
+        display : none;
+      }
+      
+        .rwd-full {
+          width          :  100%;
+          clear          :  both;
+          padding-right  :  0;
+        }
+        
+        [class*='c-']:last-child {
+          padding-right : 0;
+        }
+    
+}
+
+/**
+ * Tablets
+ */
+@media screen and (max-width: 1200px) {
+
+  .panel {
+    width : 96%;
+  }
+  
+    main.c-2-3 {
+      width : 100%;
+    }
+    
+      header {
+        display : none;
+      }
+    
+    aside {
+      display : none;
+    }
+    
+}

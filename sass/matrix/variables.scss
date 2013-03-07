@@ -1,0 +1,56 @@
+/**
+ * Font Sizes
+ *
+ * we try to enforce the habit of having a handful of font sizes by storing in generic
+ * variables like size-1, size-2, etc. There should never too many font-sizes in a site as it is
+ * an indication that it's beginning to break the style guides.
+ */
+ 
+ 
+$font-0   :  "BLOKKNeue-Regular", serif; 
+$font-1   :  Arial, Helvetica, sans-serif; 
+$font-2   :  Georgia, serif;
+$font-3   :  "Verb-Extra-Light";
+$font-4   :  "Verb-Extra-Light-Italic";
+$font-5   :  "Verb-Light";
+$font-6   :  "Verb-Light-Italic";
+$font-7   :  "Verb-Regular";  
+$font-8   :  "Verb-Italic";
+$font-9   :  "Verb-Medium";
+$font-10  :  "Verb-Medium-Italic";
+$font-18  :  "Verb-Ultra";  
+ 
+ 
+$font-size-1  :  1.19rem;
+$font-size-2  :  1.6rem;
+$font-size-3  :  1.75rem;
+$font-size-4  :  2.45rem;
+$font-size-5  :  3.15rem;
+$font-size-6  :  3.8rem;
+
+
+
+$line-height-1  :  2.19rem;
+$line-height-2  :  2.6rem;
+$line-height-3  :  2.75rem;
+$line-height-4  :  3.45rem;
+$line-height-5  :  4.0rem;
+$line-height-6  :  4.8rem;
+
+
+
+$swatch-1 : #556270;  //  Mighty Slate
+$swatch-2 : #4ECDC4;  //  Pacifica
+$swatch-3 : #C7F464;  //  Apple Chic
+$swatch-4 : #FF6B6B;  //  Cheery Pink
+$swatch-5 : #C44D58;  //  Grandma's Pillow
+
+
+
+/**
+ * Page Dimensions
+ */
+$page-width   :  1000px;
+$gutter       :  20px;
+$page-margin  :  $gutter auto;
+

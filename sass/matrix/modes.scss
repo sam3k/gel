@@ -1,0 +1,66 @@
+.m-wireframe .panel,
+.m-wireframe .pl {
+  border  :  #ddd 1px solid;
+  width   :  $page-width;
+  margin  :  $page-margin;
+}
+
+  .m-wireframe .region, 
+  .m-wireframe .reg,
+  .m-wireframe [class*='r-'] {
+    border : #CCFFFF 1px solid;;
+  }
+  
+    .m-wireframe .panes, 
+    .m-wireframe .pan,
+    .m-wireframe [class*='p-'] {
+      border : #FFCC99 1px solid;;
+    }
+    
+      .m-wireframe .widgets,
+      .m-wireframe .wgt, 
+      .m-wireframe [class*='w-'] {
+        border : #FFFF99 1px solid;;
+      }
+      
+        
+        .m-wireframe [class*='x-'] {
+          background  :  transparent;
+          border      :  #CCFF99;
+        }
+      
+
+/**
+ * Display the grid, layout, blocks and text in a black and white format
+ */
+.m-layout {
+  background   :  #efefef;
+  //font-family  :  $font-0 !important;
+}
+
+
+
+  /**
+   * A panel is the div that wraps all the page content into a canvas. (aka .wrapper, 
+   * .canvas) Using the word "panel" for consistency with "panes" naming
+   */
+  .m-layout .panel, 
+  .m-layout .pnl, 
+  .m-layout [class*='pl-'] {
+    min-height  :  400px;
+    background  :  #fff;
+    width       :  1000px;
+    margin      :  $page-margin;
+  }
+
+
+
+          /**
+           * Styles for Widgets: a widget is group of components that, combined, can offer an UX on its own.
+           */
+          .m-layout .block, 
+          .m-layout .blk, 
+          .m-layout [class*='b-'] {
+            min-height  :  60px;
+            background  :  #efefef;
+          }

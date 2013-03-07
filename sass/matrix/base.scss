@@ -1,0 +1,100 @@
+/**
+ * We abbreviate and prefix structure names to help developers inmediately identify
+ * the type of element while at the same time keeping class names short:
+ *
+ *    m   =  mode
+ *    g   =  grid
+ *    p   =  panel
+ *    r   =  region
+ *    c   =  column
+ *    w   =  widget
+ *    b   =  block
+ *    x   =  component
+ *    t   =  theme
+ *
+ */
+
+
+/**
+ * Standarize font size with rem
+ */
+html { font-size: 62.5%; } 
+
+  body { 
+    font-size    :  $font-size-2; 
+    line-height  :  $line-height-2;
+  }
+
+
+    /**
+     * No margin top! Always push down.
+     */
+    h1, h2, h3, h4, h5, h6, p {
+      margin-top : 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      color : #444;
+    }
+    
+    
+    h1 { font-size: $font-size-6; line-height : $line-height-6; }
+    h2 { font-size: $font-size-5; line-height : $line-height-5; }
+    h3 { font-size: $font-size-4; line-height : $line-height-4; }
+    h4 { font-size: $font-size-3; line-height : $line-height-3; margin-bottom : 0.7rem; }
+    h5 { font-size: $font-size-2; line-height : $line-height-2; }
+    h6 { font-size: $font-size-1; line-height : $line-height-1; }
+
+
+/*
+ * Make sure that the width of any element is truly that which was set, even if it has padding, etc
+ */
+* { 
+  @include box-sizing(border-box); 
+  
+  word-wrap : break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/**
+ * Fonts
+ */
+@include font-face("BLOKKNeue-Regular", font-files( 
+  "/matrix/fonts/BLOKK/neue-regular/webfonts/BLOKKNeue-Regular.woff", woff, 
+  "/matrix/fonts/BLOKK/neue-regular/webfonts/BLOKKNeue-Regular.ttf", truetype, 
+  "/matrix/fonts/BLOKK/neue-regular/webfonts/BLOKKNeue-Regular.svg", svg), 
+  "/matrix/fonts/BLOKK/neue-regular/webfonts/BLOKKNeue-Regular.eot"
+);
+
+
+@include font-face("Verb-Ultra", font-files( 
+  "/matrix/fonts/Verb/verb_ultra/VerbUltra-webfont.woff", woff, 
+  "/matrix/fonts/Verb/verb_ultra/VerbUltra-webfont.ttf", truetype, 
+  "/matrix/fonts/Verb/verb_ultra/VerbUltra-webfont.svg", svg), 
+  "/matrix/fonts/Verb/verb_ultra/VerbUltra-webfont.eot"
+);
+
+
+@include font-face("Verb-Light", font-files( 
+  "/matrix/fonts/Verb/verb_light/VerbLight-webfont.woff", woff, 
+  "/matrix/fonts/Verb/verb_light/VerbLight-webfont.ttf", truetype, 
+  "/matrix/fonts/Verb/verb_light/VerbLight-webfont.svg", svg), 
+  "/matrix/fonts/Verb/verb_light/VerbLight-webfont.eot"
+);
+
+
+@include font-face("Verb-Regular", font-files( 
+  "/matrix/fonts/Verb/verb_regular/VerbRegular-webfont.woff", woff, 
+  "/matrix/fonts/Verb/verb_regular/VerbRegular-webfont.ttf", truetype, 
+  "/matrix/fonts/Verb/verb_regular/VerbRegular-webfont.svg", svg), 
+  "/matrix/fonts/Verb/verb_regular/VerbRegular-webfont.eot"
+);
+
+
+@include font-face("Verb-Medium", font-files( 
+  "/matrix/fonts/Verb/verb_medium/VerbMedium-webfont.woff", woff, 
+  "/matrix/fonts/Verb/verb_medium/VerbMedium-webfont.ttf", truetype, 
+  "/matrix/fonts/Verb/verb_medium/VerbMedium-webfont.svg", svg), 
+  "/matrix/fonts/Verb/verb_medium/VerbMedium-webfont.eot"
+);
