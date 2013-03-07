@@ -1,0 +1,25 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+config/auth.json
+config/config.js
+
+pids
+logs
+results
+node_modules
+
+npm-debug.log
+
+# Sass cache
+.sass-cache
+
+# Misc
+.DS_Store
